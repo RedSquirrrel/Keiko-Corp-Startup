@@ -1,0 +1,22 @@
+/* companies */
+#companies {
+  display: grid;
+}
+
+.companies-wrapper {
+  text-align: center;
+  max-width: var(--centerColumn);
+  margin: 0 auto;
+}
+
+.company-logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: var(--gap);
+  margin-top: 5rem;
+}
+
+.company-logos > img {
+  width: 100px;
+}

@@ -1,0 +1,25 @@
+/* * MAIN * */
+
+main {
+  display: grid;
+  grid-template-columns: auto var(--centerColumn) auto;
+  row-gap: var(--rowGap);
+  overflow-x: hidden;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+  padding: var(--rowGap) var(--gap);
+}
+
+main > * {
+  grid-column: 2;
+  padding: 0 var(--gap);
+}
+
+.header-wrapper,
+.footer-wrapper {
+  max-width: var(--centerColumn);
+  padding: var(--gap);
+  margin: 0 auto;
+}

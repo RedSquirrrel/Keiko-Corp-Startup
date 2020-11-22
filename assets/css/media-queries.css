@@ -1,0 +1,54 @@
+@media only screen and (min-width: 768px) {
+  .header-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .projects-wrapper article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    place-items: center;
+  }
+
+  .project-one > .project-text,
+  .project-three > .project-text,
+  .project-two > img {
+    grid-column: 2 / -1;
+  }
+
+  .project-two > .project-text {
+    grid-row: 1/2;
+  }
+
+  .company-logos {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 5rem;
+    place-items: center;
+    grid-column: 1 / -1;
+    height: calc(100vh - 200px);
+  }
+
+  .testimonials-cards {
+    grid-template-columns: 40ch 40ch;
+    gap: 2rem;
+  }
+
+  .testimonial:nth-child(3) {
+    grid-column: 1/-1;
+  }
+
+  .price-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,28 @@
+/* Projects */
+.projects-wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+#projects h3,
+h2 {
+  text-align: center;
+}
+
+#projects p {
+  text-align: justify;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-one,
+.project-two,
+.project-three {
+  display: grid;
+  gap: 6rem;
+  column-gap: 8rem;
+  margin-top: 5rem;
+  place-items: center;
+}

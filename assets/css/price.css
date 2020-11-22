@@ -1,0 +1,73 @@
+#pricing {
+  display: grid;
+  padding-top: 3rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.price-cards {
+  display: grid;
+  max-width: var(--centerColumn);
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.price-card {
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: var(--xlPadding);
+}
+
+.price-card > h3 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+}
+
+.price > span:first-child {
+  position: relative;
+  top: 5px;
+}
+
+.price > span:nth-child(2) {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.price > span:last-child {
+  position: relative;
+  align-self: flex-end;
+  bottom: 8px;
+}
+
+.personal {
+  background-color: var(--yellow);
+}
+.agency {
+  background-color: var(--darkRed);
+}
+
+.enterprise {
+  background-color: var(--purple);
+}
+
+.price-card > p {
+  font-size: var(--lgText);
+}
+
+.price-card > p,
+span {
+  color: #fff;
+}
+
+.price-card button {
+  display: grid;
+  justify-self: center;
+}

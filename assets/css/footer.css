@@ -1,0 +1,17 @@
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: var(--gap);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}

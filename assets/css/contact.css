@@ -1,0 +1,38 @@
+/* Contact */
+#contact {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+}
+
+.contact-wrapper {
+  display: grid;
+  place-items: center;
+  max-width: 40ch;
+  margin: 0 auto;
+}
+
+.contact-wrapper img {
+  width: 2rem;
+  margin: 0 auto;
+}
+
+.update-heading {
+  margin: 1rem 0;
+}
+
+form {
+  display: flex;
+  justify-self: stretch;
+  margin-top: 1rem;
+}
+
+#email {
+  margin-right: 0.5rem;
+  width: 100%;
+}
+
+.contact-wrapper p:last-child {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
