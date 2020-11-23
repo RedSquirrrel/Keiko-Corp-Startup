@@ -31,6 +31,29 @@ body {
   --rowGap: 5rem;
   --gap: 1rem;
 
+  /* colors for light mode */
+  --mainPage: #fff;
+  --headerBg: #f4f7fe;
+  --headerColor: #343a40;
+  --toggleBtn: #20014d;
+
+  --contact-BtnBg: #fff;
+  --contact-BtnColor: #ef5b59;
+
+  --subscribe-BtnBg: #ef5b59;
+  --subscribe-BtnColor: #f4f7fe;
+
+  --pricing-BtnBg: #ef5b59;
+  --pricing-BtnColor: #f4f7fe;
+  --pricing-BtnBorder: #ef5b59;
+
+  --footer-bg: #fff;
+  --footer-color: #343a40;
+
+  --textColor: #343a40;
+  --bg-contact-pricing: #f4f7fe;
+  --shadow: 10px 12px 25px rgba(0, 0, 0, 0.5);
+
   /* colors */
   --red: #ef5b59;
   --lightBlue: #f4f7fe;
@@ -81,11 +104,44 @@ body {
   /* @media (min-width: 1280px) { ... } */
 }
 
+/* colors for dark mode */
+[data-theme='dark'] {
+  --mainPage: #343a40;
+  --headerBg: #343a40;
+  --headerColor: #fff;
+  --toggleBtn: #ef5b59;
+
+  --contact-BtnBg: #ef5b59;
+  --contact-BtnColor: #fff;
+
+  --contact-pricing-BtnBg: #ef5b59;
+  --contact-pricing-BtnColor: #fff;
+
+  --subscribe-BtnBg: #343a40;
+  --subscribe-BtnColor: #f4f7fe;
+
+  --pricing-BtnBg: #343a40;
+  --pricing-BtnColor: #f4f7fe;
+  --pricing-BtnBorder: #343a40;
+
+  --footer-bg: #343a40;
+  --footer-color: #f4f7fe;
+
+  --textColor: #f4f7fe;
+  --bg-contact-pricing: #ef5b59;
+
+  --shadow: 10px 12px 25px rgba(241, 207, 207, 0.164);
+}
+
 body {
   color: var(--text);
   font-size: clamp(100%, 1rem + 0.25vw, 2rem);
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+main {
+  background-color: var(--mainPage);
 }
 
 h1,
@@ -134,8 +190,8 @@ textarea:focus {
 button,
 input[type='submit'] {
   cursor: pointer;
-  color: var(--lightBlue);
-  background: var(--red);
+  /* color: var(--contact-pricing-BtnColor);
+  background: var(--contact-pricing-BtnBg); */
   border: 2px solid var(--red);
   padding: var(--btnPadding);
   transition: var(--transition);
@@ -146,7 +202,8 @@ input[type='submit'] {
 
 button:hover,
 input[type='submit']:hover {
-  background: var(--darkRed);
+  background: var(--contact-pricing-BtnColor);
+  color: var(--contact-pricing-BtnBg);
   border: 2px solid var(--darkRed);
   box-shadow: var(--mdShadow);
 }
@@ -177,7 +234,7 @@ a:hover {
 /* Give contact and pricing sections lightBlue background */
 #contact,
 #pricing {
-  background: var(--lightBlue);
+  background: var(--bg-contact-pricing);
 }
 
 #companies {

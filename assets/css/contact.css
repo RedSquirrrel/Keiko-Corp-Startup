@@ -3,6 +3,7 @@
   text-align: center;
   display: grid;
   justify-items: center;
+  color: var(--textColor);
 }
 
 .contact-wrapper {
@@ -18,6 +19,7 @@
 }
 
 .update-heading {
+  color: var(--textColor);
   margin: 1rem 0;
 }
 
@@ -25,6 +27,11 @@ form {
   display: flex;
   justify-self: stretch;
   margin-top: 1rem;
+}
+
+form input[type='submit'] {
+  background-color: var(--subscribe-BtnBg);
+  color: var(--subscribe-BtnColor);
 }
 
 #email {

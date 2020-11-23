@@ -7,6 +7,9 @@
   justify-items: center;
 }
 
+.testimonials-title {
+  color: var(--textColor);
+}
 .testimonial {
   /*! ch is very useful for correctly defining the text width of a paragraph. */
   max-width: 40ch;
@@ -22,6 +25,9 @@
 
 .testimonial > p {
   font-style: italic;
+}
+.testimonial {
+  border-radius: 5px;
 }
 
 .customer {

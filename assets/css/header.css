@@ -2,7 +2,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: var(--lightBlue);
+  background: var(--headerBg);
   border-bottom: 1px solid var(--red);
   box-shadow: var(--smShadow);
   z-index: 10;
@@ -24,6 +24,7 @@ header {
   margin: 0 auto;
   font-weight: 300;
   text-transform: uppercase;
+  color: var(--headerColor);
 }
 
 .logo {
@@ -36,8 +37,10 @@ header {
   grid-area: 1 / 1 / 1 / -1;
 }
 
-.contact-btn {
+.contact-btn button {
   justify-self: center;
+  background-color: var(--contact-BtnBg);
+  color: var(--contact-BtnColor);
 }
 
 /* Toggle button */
@@ -81,7 +84,7 @@ header {
 }
 
 input:checked + .slider {
-  background-color: var(--purple);
+  background-color: var(--toggleBtn);
 }
 
 input:checked + .slider::before {

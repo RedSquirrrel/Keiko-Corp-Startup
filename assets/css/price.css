@@ -3,6 +3,7 @@
   padding-top: 3rem;
   text-align: center;
   gap: 1rem;
+  color: var(--textColor);
 }
 
 .price-cards {
@@ -18,6 +19,8 @@
   justify-content: center;
   align-items: center;
   padding: var(--xlPadding);
+  box-shadow: var(--shadow);
+  /* box-shadow: 0 2px 3px 2px rgba(250, 250, 250, 0.1); */
 }
 
 .price-card > h3 {
@@ -70,4 +73,12 @@ span {
 .price-card button {
   display: grid;
   justify-self: center;
+  background-color: var(--pricing-BtnBg);
+  color: var(--pricing-BtnColor);
+  border: 2px solid var(--pricing-BtnBorder);
+}
+
+.price-card button:hover {
+  background-color: var(--pricing-BtnColor);
+  color: var(--pricing-BtnBg);
 }

@@ -7,10 +7,18 @@
 #projects h3,
 h2 {
   text-align: center;
+  color: var(--textColor);
 }
 
 #projects p {
   text-align: justify;
+  color: var(--textColor);
+  margin-bottom: 2rem;
+}
+
+.project-link {
+  color: var(--textColor);
+  font-style: italic;
 }
 
 .project-image {
