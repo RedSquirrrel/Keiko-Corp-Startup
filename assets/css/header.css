@@ -10,8 +10,9 @@ header {
 
 .header-wrapper {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template: 1fr 1fr / 1fr;
   align-items: center;
+  justify-content: center;
 }
 
 .menu {
@@ -21,6 +22,7 @@ header {
 }
 .menu li a {
   display: grid;
+  justify-content: center;
   margin: 0 auto;
   font-weight: 300;
   text-transform: uppercase;
@@ -35,12 +37,18 @@ header {
 .logo,
 .contact-btn {
   grid-area: 1 / 1 / 1 / -1;
+  display: grid;
+  justify-content: center;
 }
 
 .contact-btn button {
   justify-self: center;
   background-color: var(--contact-BtnBg);
   color: var(--contact-BtnColor);
+}
+
+.contact-btn:hover {
+  border-bottom: none;
 }
 
 /* Toggle button */
